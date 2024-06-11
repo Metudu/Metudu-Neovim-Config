@@ -27,7 +27,7 @@ local on_attach = function(client,bufnr)
 end
 
 local capabilities = cmp_nvim_lsp.default_capabilities()
-
+--[[
 lspconfig["pyright"].setup({
     capabilities = capabilities,
     on_attach = on_attach,
@@ -67,7 +67,7 @@ lspconfig["gopls"].setup({
     capabilities = capabilities,
     on_attach = on_attach,
 })
-
+--]]
 lspconfig["bashls"].setup({
     capabilities = capabilities,
     on_attach = on_attach,
